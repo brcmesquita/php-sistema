@@ -9,7 +9,7 @@
 
  ### Sobre o Sistema
  Sistema Web de gerenciamento moderno, com diversos módulos de gerenciamento. Os módulos são:
- - Gerenciador de Tarefas
+- Gerenciador de Tarefas
   - Tipo To Do list;
   - Com tempo estimado; 
   - Com data de início e data fim;
