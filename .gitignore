@@ -28,4 +28,6 @@ public/storage
 storage/*.key
 yarn-error.log
 *.lock
-
+composer.lock
+package-lock.json
+yarn-lock.json
