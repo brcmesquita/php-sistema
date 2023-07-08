@@ -5,6 +5,7 @@
  - PHP 8
  - Laravel
  - Vue.JS
+ - Bootstrap
  - MariaDB
 
  ### Sobre o Sistema
