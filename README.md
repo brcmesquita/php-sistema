@@ -26,6 +26,35 @@
 - Agenda de Contatos
   - Muito mais que uma agenda telefônica
 
+# Passo a Passo
+### PHP
+- Instalar o PHP
+    - https://www.php.net/downloads.php
+
+### Laravel
+- Instalar o Laravel localmente
+    - ```composer global require laravel/installer```
+- Criar o projeto Laravel
+    - ```laravel new php-sistema-web```
+- Acessar a pasta do projeto
+    - ```cd php-sistema-web```
+- Iniciar o servidor do Laravel
+    - ```php artisan serve```
+- Acessar o projeto via navegador através do endereço
+    - http://localhost:8000
+
+- Instalar o Laravel UI (se já não estiver instalado)
+    - ```composer require laravel/ui```
+
+- Instalar as dependências do frontend (Vue.js)
+    - ```php artisan ui vue```
+
+- Instalar o Bootstrap
+    - ```php artisan ui bootstrap```
+
+### Instalar todas as dependências npm e compilar os ativos
+npm install && npm run dev 
+
 ### Projeto Laravel
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
