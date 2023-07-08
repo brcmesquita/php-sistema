@@ -1,3 +1,5 @@
+<?php
+?>
 <body>
   <!-- Conteúdo da página -->
 
