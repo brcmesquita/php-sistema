@@ -17,7 +17,8 @@ class TodoController
 
   public function register()
   {
-     // Verificar se o usuário já está autenticado
+    try {
+       // Verificar se o usuário já está autenticado
      if ($this->authenticated) {
       header('Location: ../views/layout.php');
       return;
@@ -34,13 +35,22 @@ class TodoController
         echo 'Email already in use';
         return;
       }
-  
-      // Criar um novo usuário
-      $this->model->createUser($name, $email, $password);
-      header('Location: /login');
-      return;
-    }
-  
+
+       // Criar um novo usuário
+       $this->model->createUser($name, $email, $password);
+       header('Location: /login');
+       return;
+      }
+
+    } catch (PDOException $e) {
+      // Captura exceções PDOException (erros do banco de dados)
+      // e exibe uma mensagem de erro adequada ou registra o erro em um arquivo de log
+      echo 'Erro ao processar o registro: ' . $e->getMessage();
+    } catch (Exception $e) {
+      // Captura outras exceções não esperadas
+      // e exibe uma mensagem de erro genérica ou registra o erro em um arquivo de log
+      echo 'Erro inesperado: ' . $e->getMessage();
+    }  
     include '../views/register.php';
   }
 
