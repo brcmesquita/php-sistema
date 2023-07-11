@@ -1,0 +1,67 @@
+Crie um aplicativo web com as seguintes especificações
+
+# TO DO List
+
+- Projeto 1 | Tarefas
+
+- Linguagem de Programação
+  - PHP 7 ou PHP 8
+  - PDO
+- Banco de Dados
+  - MariaDB/MySQL
+- Frameworks
+  - Bootstrap
+
+- Telas/Páginas
+  - Página Inicial
+    - Boas Vindas com opções de Login ou Cadastro
+  - Login
+    - Área de Login
+  - Cadastro
+    - Onde a pessoa vai criar o seu usuário
+  - Dashboard
+    - Tela Principal do Sistema, onde terá uma lista com todas as tarefas e um botão para criar novas tarefas
+      - Um menu principal com a logo Tarefas, um botão de perfil (para alterar informações do usuário, e um botão de logout)
+      - Cada tarefa da lista terá um botão para visualizar a tarefa, outro botão para editar a tarefa, outro botão para excluir a tarefa
+
+  - Usuários
+    - Id
+    - Nome
+    - E-mail
+    - Senha
+
+  - Lista de Tarefas
+    - Id
+    - Id do Usuário
+    - Nome da Tarefa
+    - Descrição da Tarefa
+    - Projeto da Tarefa (Id do Projeto)
+    - Data de Criação
+    - Data de Vencimento
+    - Data de Conclusão
+    - Tempo Decorrido (Data de Conclusão - Data de Vencimento via PHP)
+    - Tempo Total (Data de Conclusão - Data de Criação via PHP)
+    - Recorrente (sim/não)
+    - Recorrência (em horas, em dias, em semanas, em meses, em anos via PHP)
+
+  - Projetos
+    - Id
+    - Id do Usuário (cada usuário terá sua própria lista de tarefas)
+    - Nome do Projeto
+
+
+- app
+  - controllers
+    - TodoController.php
+  - models
+    - TodoModel.php
+  - views
+    - index.php
+    - layout.php
+  - routes.php
+- public
+  - assets
+    - css
+    - js
+  - index.php
+
