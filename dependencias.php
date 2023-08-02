@@ -1,0 +1,5 @@
+<head>
+  <meta charset="UTF-8">
+  <!-- Incluir os arquivos CSS do Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
